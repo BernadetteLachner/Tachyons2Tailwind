@@ -6,4 +6,4 @@ Requires node
 
 <h3>Running the script</h3>
 
-in command line run $ node /path/to/thisFile.js /path/to/target/dir
+In command line run $ node /path/to/thisFile.js /path/to/target/dir
