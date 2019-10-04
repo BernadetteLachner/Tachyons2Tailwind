@@ -78,7 +78,7 @@ var traverse = function(dir, result = []) {
             [/(?:\s|"|\')(\b(pink)\b)(?:\s|"|\'|-l|-m|-sn)/g, "text-pink-400"],
           ]; 
 
-                  var codeWords = [
+          var codeWords = [
             [/pa0/g, "p-0"],
             [/pa1/g, "p-1"],
             [/pa2/g, "p-2"],
