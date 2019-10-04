@@ -635,4 +635,4 @@ var traverse = function(dir, result = []) {
 console.log(util.inspect(traverse(process.argv[2]), false, null));
 console.log("\n MISSION COMPLETE (▀̿Ĺ̯▀̿ ̿)...\n");
 
-//run in command line $ node /path/to/thisFile.js /path/to/target/dir
+//run in command line $ node /path/to/tachyons2tailwind.js /path/to/target/dir
