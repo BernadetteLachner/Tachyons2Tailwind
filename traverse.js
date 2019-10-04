@@ -1,4 +1,3 @@
-// https://codepen.io/diomed/pen/VddymX <--- ironic!
 // https://stackoverflow.com/questions/14177087/replace-a-string-in-a-file-with-nodejs
 // https://stackoverflow.com/questions/46390733/recursively-read-a-directories-with-a-folder
 
