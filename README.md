@@ -6,7 +6,7 @@ The fact that Tailwind overtook Tachyons about a year+ ago in npm trends, that i
 
 This is a repository dedicated to making the transition from <b>Tachyons2Tailwind</b> a breeze! 🕶
 
-For more online resources,checkout https://pandoras-box.co.za/tachyons2tailwind/
+For more online resources, check out https://pandoras-box.co.za/tachyons2tailwind/
 
 ⛔ Work in progress! ⛔
 
