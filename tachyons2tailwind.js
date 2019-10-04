@@ -488,7 +488,8 @@ var traverse = function(dir, result = []) {
                 [/bg-washed-red/g, "bg-red-100"],
                 [/bg-transparent/g, "bg-transparent"],
                 //.bg-inherit not supported (1517)
-                //.hover not supported via cdn (1520)
+                [/hover-/g, "hover\:"],
+                //group hover not supported via cdn (1520)
           ];
 
 
