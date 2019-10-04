@@ -10,7 +10,7 @@ This is a repository dedicated to making the transition from <b>Tachyons2Tailwin
 
 <h3>Dependencies</h3>
 
-Requires Node and some old Tachyons
+Requires Node and some old Tachyons for target practice
 
 
 
