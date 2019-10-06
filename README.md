@@ -16,4 +16,4 @@ Requires Node and some old Tachyons for target practice.
 
 <h3>Running the script</h3>
 
-In command line run <code>$ node /path/to/tachyons2tailwind.js /path/to/target/dir</code>
+In command line type <code>$ node /path/to/tachyons2tailwind.js /path/to/target/dir</code>
