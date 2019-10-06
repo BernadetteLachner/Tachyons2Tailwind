@@ -418,7 +418,6 @@ var traverse = function(dir, result = []) {
             [/(?:\s|\"|\'|hover\-)(\b(b--washed-yellow)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "border-yellow-100"],
             [/(?:\s|\"|\'|hover\-)(\b(b--washed-red)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "border-red-100"],
             [/(?:\s|\"|\'|hover\-)(\b(b--transparent)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "border-transparent"],
-
             //.white-(n) & .black-(n) not supported (1181)
             [/(?:\s|\"|\'|hover\-)(\b(near-black)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "text-gray-900"],
             [/(?:\s|\"|\'|hover\-)(\b(dark-gray)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "text-gray-800"],
@@ -501,7 +500,9 @@ var traverse = function(dir, result = []) {
                         
                         w.forEach((match, groupIndex) => {
 
-                        // if (groupIndex == (0|1|2|3)) {could do some stuff like this, but nah, let's just grab the whole word match again, keep those hypens in place!}
+// if (groupIndex == (0|1|2|3)) {
+//could do some stuff like this, but nah, let's just grab the whole word match again, keep those hypens in place!
+//                        }
 
                             if (new RegExp("\\b"+match+"\\b").test(match)) {
                             
