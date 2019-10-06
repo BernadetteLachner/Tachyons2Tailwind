@@ -486,7 +486,7 @@ var traverse = function(dir, result = []) {
             [/(?:\s|\"|\'|hover\-)(\b(bg-transparent)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "bg-transparent"],
             //.bg-inherit not supported (1517)
             //group hover not supported via cdn (1520)
-//all padding and margins:  [/(?:\s|\"|\'|hover\-)(\b(((p|m)(a|l|t|b|r|v|h))([0-7]))\b)(?:\s|"|\'|-l|-m|-sn)/g, "padmar"],
+//all padding and margins:  [/(?:\s|\"|\'|hover\-)(\b(((p|m|n)(a|l|t|b|r|v|h))([0-7]))\b)(?:\s|"|\'|-l|-m|-sn)/g, "padmar"],
 //all colors, border-colors & background colors: [/(?:\s|\"|\'|hover\-)(|bg-|b--)(\b((color))\b)(?:\s|"|\'|-l|-m|-sn)/g, "color"],
           ]; 
 
