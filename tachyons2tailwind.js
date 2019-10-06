@@ -33,7 +33,7 @@ var traverse = function(dir, result = []) {
         var result = data.replace();
 
 
-          const codeWords = [
+          var codeWords = [
             [/(?:\s|\"|\'|hover\-)(\b(sans-serif)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "font-sans"],
             [/(?:\s|\"|\'|hover\-)(\b(serif)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "font-serif"],
             [/(?:\s|\"|\'|hover\-)(\b(code)\b)(?:\s|\"|\'|-l|-m|-ns)/g, "font-mono"],
