@@ -1,3 +1,4 @@
+// https://codepen.io/diomed/pen/VddymX <--- ironic!
 // https://stackoverflow.com/questions/14177087/replace-a-string-in-a-file-with-nodejs
 // https://stackoverflow.com/questions/46390733/recursively-read-a-directories-with-a-folder
 var fs = require('fs');
@@ -38,15 +39,15 @@ var traverse = function (dir, result = []) {
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(cover)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-cover"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(contain)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-contain"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(ba)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-solid"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bt)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-t"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(br)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-r"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bb)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-b"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bl)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-l"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bt)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-solid border-t"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(br)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-solid border-r"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bb)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-solid border-b"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bl)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-solid border-l"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bn)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "border-none"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(pre)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "whitespace-pre"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(di)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "inline"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(fl)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "float-left"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(fr)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "float-right"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(fl)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "float-left inline"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(fr)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "float-right inline"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(fn)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "float-none"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(h1)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "h-4"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(h2)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "h-8"],
@@ -102,11 +103,11 @@ var traverse = function (dir, result = []) {
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(z-4)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "z-40"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(z-5)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "z-50"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(z-initial)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "z-auto"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-bottom)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-bottom "],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-center)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-center"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-top)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-top"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-right)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-right"],
-[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-left)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-left"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-bottom)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-bottom bg-no-repeat"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-center)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-center bg-no-repeat"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-top)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-top bg-no-repeat"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-right)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-right bg-no-repeat"],
+[/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(bg-left)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "bg-left bg-no-repeat"],
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(outline-0)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "outline-none"],
 //.outline & .outline-transparent not supported (205)
 [/class=.*?\s?(?:\s|\"|\'|hover\-)(\b(br0)\b)(?:\s|\"|\'|-l|-m|-ns).*?\s?\>/g, "rounded-none"],
@@ -560,6 +561,13 @@ var traverse = function (dir, result = []) {
 						//do stuff here for padmar and color, but for now, let's just grab the whole word match again, keep those hypens in place!
 						//                      }
 						if (new RegExp("\\b" + match + "\\b").test(match)) {
+							var hslice = 'hover-'+match;
+							var spslicens = ' '+match+'-ns';
+							var spslicem = ' '+match+'-m';
+							var spslicel = ' '+match+'-l';
+							var qslicens = '\"'+match+'-ns';
+							var qslicem = '\"'+match+'-m';
+							var qslicel = '\"'+match+'-l';
 							var qslicesp = '"' + match + ' ';
 							var qsliceq = '"' + match + '"';
 							var spsliceq = ' ' + match + '"';
@@ -567,10 +575,34 @@ var traverse = function (dir, result = []) {
 							var apsliceap = '\'' + match + '\'';
 							var spsliceap = ' ' + match + '\'';
 							var spslicesp = ' ' + match + ' ';
-							var hslice = 'hover-' + match;
-							var slicens = match + '-ns';
-							var slicem = match + '-m';
-							var slicel = match + '-l';
+						}
+						if (match = hslice) {
+							let stingOperation = result.replace(match, ('hover\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = spslicens) {
+							let stingOperation = result.replace(match, (' sm\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = spslicem) {
+							let stingOperation = result.replace(match, (' md\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = spslicel) {
+							let stingOperation = result.replace(match, (' lg\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = qslicens) {
+							let stingOperation = result.replace(match, ('\"sm\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = qslicem) {
+							let stingOperation = result.replace(match, ('\"md\:' + item[1]));
+							result = stingOperation;
+						}
+						if (match = qslicel) {
+							let stingOperation = result.replace(match, ('\"lg\:' + item[1]));
+							result = stingOperation;
 						}
 						if (match = qslicesp) {
 							let stingOperation = result.replace(match, ('"' + item[1] + ' '));
@@ -598,22 +630,6 @@ var traverse = function (dir, result = []) {
 						}
 						if (match = spslicesp) {
 							let stingOperation = result.replace(match, (' ' + item[1] + ' '));
-							result = stingOperation;
-						}
-						if (match = hslice) {
-							let stingOperation = result.replace(match, ('hover\:' + item[1]));
-							result = stingOperation;
-						}
-						if (match = slicens) {
-							let stingOperation = result.replace(match, ('sm\:' + item[1]));
-							result = stingOperation;
-						}
-						if (match = slicem) {
-							let stingOperation = result.replace(match, ('md\:' + item[1]));
-							result = stingOperation;
-						}
-						if (match = slicel) {
-							let stingOperation = result.replace(match, ('lg\:' + item[1]));
 							result = stingOperation;
 						}
 					});
