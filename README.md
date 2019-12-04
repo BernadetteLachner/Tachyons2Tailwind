@@ -19,7 +19,7 @@ Requires Node and some old Tachyons for target practice.
 <ul>
   <li>Tachyons and Tailwind use different media queries (px vs em).</li>
   <li>In each framework, some elements have been styled directly. These elements will change accordingly, even without assigned classes. (This is particularly noteworthy when it comes to images.)</li>
-  <li><a href="https://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheatsheet</a></li>
+  <li>A cool <a href="https://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheatsheet</a></li>
   <li>Use can use <code>https://unpkg.com/tailwindcss/dist/tailwind.min.css</code> in your header until Tailwind has been configured. Makes testing this much easier!</li>
 </ul>
 
