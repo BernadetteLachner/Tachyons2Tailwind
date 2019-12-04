@@ -18,7 +18,7 @@ Requires Node and some old Tachyons for target practice.
 
 <ul>
   <li>Tachyons and Tailwind use different media queries (px vs em)</li>
-  <li>Some style atts have been assigned directly to elements. These elements will change accordingly, even without assigned classes.</li>
+  <li>In each framework, some elements have been styled directly. These elements will change accordingly, even without assigned classes.</li>
 </ul>
 
 <h3>Running the script</h3>
