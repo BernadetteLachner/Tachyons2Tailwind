@@ -17,7 +17,14 @@ Requires Node and some old Tachyons for target practice.
 <h3>Important information</h3>
 
 <ul>
-  <li>Tachyons and Tailwind use different media queries (px vs em).</li>
+  <li>Tachyons and Tailwind use different media queries (px vs em).
+    <ul>
+      <li>Small Tachyons @media screen and (min-width:30em) vs Tailwind @media (min-width:640px)</li>
+      <li>Medium Tachyons @media screen and (min-width:30em) and (max-width:60em) vs Tailwind @media (min-width:768px)</li>
+      <li>Large Tachyons@media screen and (min-width:60em) vs @media (min-width:1024px)</li>
+    </ul>
+    *please note that some manual TCL will be required for those medium media queries in that Tachyons defines the range from start to end while Tailwind relies on a min-width only.
+  </li>
   <li>In each framework, some elements have been styled directly. These elements will change accordingly, even without assigned classes. (This is particularly noteworthy when it comes to images.)</li>
   <li>A cool <a href="https://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheatsheet</a></li>
   <li>You can use <code>https://unpkg.com/tailwindcss/dist/tailwind.min.css</code> in your header until Tailwind has been configured. Makes testing this much easier!</li>
