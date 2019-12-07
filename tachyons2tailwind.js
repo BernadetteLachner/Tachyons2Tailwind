@@ -560,16 +560,16 @@ var traverse = function (dir, result = []) {
 						//do stuff here for padmar and color, but for now, let's just grab the whole word match again, keep those hypens in place!
 						//                      }
 						if (new RegExp("\\b" + match + "\\b").test(match)) {
-							var hslice = 'hover-'+match;
-							var spslicens = ' '+match+'-ns';
-							var spslicem = ' '+match+'-m';
-							var spslicel = ' '+match+'-l';
-							var qslicens = '\"'+match+'-ns';
-							var qslicem = '\"'+match+'-m';
-							var qslicel = '\"'+match+'-l';
-							var qslicesp = '"' + match + ' ';
-							var qsliceq = '"' + match + '"';
-							var spsliceq = ' ' + match + '"';
+							var hslice = 'hover-' + match;
+							var spslicens = ' ' + match + '-ns';
+							var spslicem = ' ' + match + '-m';
+							var spslicel = ' ' + match + '-l';
+							var qslicens = '\"' + match + '-ns';
+							var qslicem = '\"' + match + '-m';
+							var qslicel = '\"' + match + '-l';
+							var qslicesp = '\"' + match + ' ';
+							var qsliceq = '\"' + match + '\"';
+							var spsliceq = ' ' + match + '\"';
 							var apslicesp = '\'' + match + ' ';
 							var apsliceap = '\'' + match + '\'';
 							var spsliceap = ' ' + match + '\'';
@@ -604,11 +604,11 @@ var traverse = function (dir, result = []) {
 							result = stingOperation;
 						}
 						if (match = qslicesp) {
-							let stingOperation = result.replace(match, ('"' + item[1] + ' '));
+							let stingOperation = result.replace(match, ('\"' + item[1] + ' '));
 							result = stingOperation;
 						}
 						if (match = qsliceq) {
-							let stingOperation = result.replace(match, ('"' + item[1] + '"'));
+							let stingOperation = result.replace(match, ('\"' + item[1] + '"'));
 							result = stingOperation;
 						}
 						if (match = spsliceq) {
