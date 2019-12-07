@@ -17,13 +17,29 @@ Requires Node and some old Tachyons for target practice.
 <h3>Important information</h3>
 
 <ul>
-  <li>Tachyons and Tailwind use different media queries (px vs em).
-    <ul>
-      <li>Small Tachyons @media screen and (min-width:30em) vs Tailwind @media (min-width:640px)</li>
-      <li>Medium Tachyons @media screen and (min-width:30em) and (max-width:60em) vs Tailwind @media (min-width:768px)</li>
-      <li>Large Tachyons@media screen and (min-width:60em) vs @media (min-width:1024px)</li>
-    </ul>
-    *please note that some manual TCL will be required for those medium media queries in that Tachyons defines the range from start to end while Tailwind relies on a min-width only.
+  <li>Tachyons and Tailwind use different media queries (px vs em). Some manual TCL will be required for those medium media queries in that Tachyons defines the range from start to end while Tailwind relies on a min-width only.
+    <table>
+  <tr>
+    <th>Size</th>
+    <th>Tachyons</th>
+    <th>Tailwind</th>
+  </tr>
+  <tr>
+    <td>Small</td>
+    <td>@media screen and (min-width:30em)</td>
+    <td>Tailwind @media (min-width:640px)</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>@media screen and (min-width:30em) and (max-width:60em)</td>
+    <td>@media (min-width:768px)</td>
+  </tr>
+  <tr>
+    <td>Large</td>
+    <td>@media screen and (min-width:60em)</td>
+    <td>@media (min-width:1024px)</td>
+  </tr>
+</table>
   </li>
   <li>In each framework, some elements have been styled directly. These elements will change accordingly, even without assigned classes. (This is particularly noteworthy when it comes to images.)</li>
   <li>A cool <a href="https://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheatsheet</a></li>
