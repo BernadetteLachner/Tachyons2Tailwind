@@ -14,7 +14,7 @@ For more online resources, check out https://pandoras-box.co.za/tachyons2tailwin
 
 Requires Node and some old Tachyons for target practice.
 
-<h3>Important information</h3>
+<h3>Useful information</h3>
 
 <ul>
   <li>Tachyons and Tailwind use different media queries (px vs em). Some manual TCL will be required for those medium media queries in that Tachyons defines the range from start to end while Tailwind relies on a min-width only.
