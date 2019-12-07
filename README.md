@@ -44,7 +44,7 @@ Requires Node and some old Tachyons for target practice.
   <li>In each framework, some elements have been styled directly. These elements will change accordingly, even without assigned classes. (This is particularly noteworthy when it comes to images.)</li>
   <li>A cool <a href="https://nerdcave.com/tailwind-cheat-sheet">Tailwind Cheatsheet</a></li>
   <li>You can use <code>https://unpkg.com/tailwindcss/dist/tailwind.min.css</code> in your header until Tailwind has been configured. Makes testing this much easier!</li>
-  <li>There are some Tachyons classes which are not supported by Tailwind. These have been commented in the script. (Coming soon: extra option to remove unsupported Tachyons or to download legacy stylesheet that supports only these classes.)</li>
+  <li>There are some Tachyons classes which are not supported by Tailwind. These have been commented in the script. (Coming soon: extra option to remove unsupported Tachyons or to download legacy stylesheet that supports only those classes.)</li>
 </ul>
 
 <h3>Running the script</h3>
