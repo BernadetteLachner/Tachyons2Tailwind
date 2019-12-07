@@ -27,7 +27,7 @@ Requires Node and some old Tachyons for target practice.
   <tr>
     <td>Small</td>
     <td>@media screen and (min-width:30em)</td>
-    <td>Tailwind @media (min-width:640px)</td>
+    <td>@media (min-width:640px)</td>
   </tr>
   <tr>
     <td>Medium</td>
