@@ -608,11 +608,11 @@ var traverse = function (dir, result = []) {
 							result = stingOperation;
 						}
 						if (match = qsliceq) {
-							let stingOperation = result.replace(match, ('\"' + item[1] + '"'));
+							let stingOperation = result.replace(match, ('\"' + item[1] + '\"'));
 							result = stingOperation;
 						}
 						if (match = spsliceq) {
-							let stingOperation = result.replace(match, (' ' + item[1] + '"'));
+							let stingOperation = result.replace(match, (' ' + item[1] + '\"'));
 							result = stingOperation;
 						}
 						if (match = apslicesp) {
